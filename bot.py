@@ -90,17 +90,17 @@ async def start(event):
   if event.is_private:
     async for usr in client.iter_participants(event.chat_id):
      ad = f"[{usr.first_name}](tg://user?id={usr.id}) "
-     await client.send_message(-1001742841165, f"ℹ️ **Yeni Kullanıcı -** {ad}")
-     return await event.reply(f"💖😋 **Merhaba ben User Tagger Pro Bot** \n🏷 **Gruplarda kullanıcıları etikelemek için tasarlandım**. \n**Butonları kullanarak yardım alabilirsin.**", buttons=(
+     await client.send_message("-10018704062386, f"ℹ️ **Yeni Kullanıcı -** {ad}")
+     return await event.reply(f"💖😋 **Merhaba ben Fallen Tagger Pro Bot** \n🏷 **Gruplarda kullanıcıları etikelemek için tasarlandım**. \n**Butonları kullanarak yardım alabilirsin.**", buttons=(
                       [
                        Button.inline("📚 Commands", data="komutlar")
                       ],
                       [
-                       Button.url('➕ Add Group', 'https://t.me/UserTaggerProBot?startgroup=a'),
-                       Button.url('Owner 👤', 'https://t.me/LuazHCK')
+                       Button.url('➕ Add Group', 'https://t.me/FallenTaggerBot?startgroup=a'),
+                       Button.url('Owner 👤', 'https://t.me/Fivist')
                       ],
                       [
-                       Button.url('My Chat 💬', 'https://t.me/LuazBotlar')
+                       Button.url('My Chat 💬', 'https://t.me/KatanaProChat')
                       ],
                     ),
                     link_preview=False)
@@ -119,12 +119,12 @@ async def handler(event):
                        Button.inline("📚 Commands", data="komutlar")
                       ],
                       [
-                       Button.url('Me Add Group', 'https://t.me/UserTaggerProBott?startgroup=a'),
-                       Button.url('Owner 👤', 'https://t.me/LuazHCK')
+                       Button.url('Me Add Group', 'https://t.me/FallenTaggerBot?startgroup=a'),
+                       Button.url('Owner 👤', 'https://t.me/Fivist')
                     
                       ],
                       [
-                       Button.url('Support 🤝', 'https://t.me/FearlessChatTr')
+                       Button.url('Support 🤝', 'https://t.me/MajesteSohbet')
                       ],
                     ),
                     link_preview=False)
