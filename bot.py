@@ -47,7 +47,7 @@ LOGGER = logging.getLogger(__name__)
 api_id = int(os.environ.get("9839833"))
 api_hash = os.environ.get("23818dbf65e7d370cc0adb900f32d16c")
 bot_token = os.environ.get("6105548225:AAEDPGIeTUOYPuW9gBcep1940VLk_NraEME")
-BOT_ID = os.environ.get("BOT_ID")
+BOT_ID = os.environ.get("6105548225")
 OWNER_ID = os.environ.get("5850021519")
 
 client = TelegramClient('client', api_id, api_hash).start(bot_token=bot_token)
@@ -114,7 +114,7 @@ async def start(event):
 async def handler(event):
     async for usr in client.iter_participants(event.chat_id):
      ad = f"[{usr.first_name}](tg://user?id={usr.id}) "
-     await event.edit(f"💖😋 **Merhaba ben User Tagger Pro Bot** \n🏷 **Gruplarda kullanıcıları etikelemek için tasarlandım**. \n**Butonları kullanarak yardım alabilirsin.**", buttons=(
+     await event.edit(f"💖😋 **Merhaba ben Fallen Tagger Pro Bot** \n🏷 **Gruplarda kullanıcıları etikelemek için tasarlandım**. \n**Butonları kullanarak yardım alabilirsin.**", buttons=(
                       [
                        Button.inline("📚 Commands", data="komutlar")
                       ],
