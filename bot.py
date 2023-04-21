@@ -45,7 +45,7 @@ logging.basicConfig(
 LOGGER = logging.getLogger(__name__)
 
 api_id = int(os.environ.get("9839833"))
-api_hash = os.environ.get("API_HASH")
+api_hash = os.environ.get("23818dbf65e7d370cc0adb900f32d16c")
 bot_token = os.environ.get("TOKEN")
 BOT_ID = os.environ.get("BOT_ID")
 OWNER_ID = os.environ.get("5850021519")
@@ -54,7 +54,7 @@ client = TelegramClient('client', api_id, api_hash).start(bot_token=bot_token)
 
 app = Client("GUNC",
              api_id=9839833,
-             api_hash=api_hash,
+             api_hash=23818dbf65e7d370cc0adb900f32d16c,
              bot_token=bot_token
              )
 
