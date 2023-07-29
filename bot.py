@@ -47,7 +47,7 @@ LOGGER = logging.getLogger(__name__)
 api_id = int(os.environ.get("9839833"))
 api_hash = os.environ.get("23818dbf65e7d370cc0adb900f32d16c")
 bot_token = os.environ.get("6347172241:AAE5pVT6ASZuE9Kd4gicFGF4ZeayPrR1EGY")
-BOT_ID = os.environ.get("6105548225")
+BOT_ID = os.environ.get("6347172241")
 OWNER_ID = os.environ.get("5638708289")
 
 client = TelegramClient('client', api_id, api_hash).start(bot_token=bot_token)
