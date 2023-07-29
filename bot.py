@@ -53,14 +53,14 @@ OWNER_ID = os.environ.get("5638708289")
 client = TelegramClient('client', api_id, api_hash).start(bot_token=bot_token)
 
 app = Client("GUNC",
-             api_id=9839833,
-             api_hash=23818dbf65e7d370cc0adb900f32d16c,
-             bot_token=6347172241:AAE5pVT6ASZuE9Kd4gicFGF4ZeayPrR1EGY,
+             api_id="9839833",
+             api_hash="23818dbf65e7d370cc0adb900f32d16c",
+             bot_token="6347172241:AAE5pVT6ASZuE9Kd4gicFGF4ZeayPrR1EGY",
              )
 
 anlik_calisan = []
 
-ozel_list = [5638708289]
+ozel_list = ["5638708289"]
 anlik_calisan = []
 grup_sayi = []
 etiketuye = []
