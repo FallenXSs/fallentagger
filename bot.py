@@ -46,21 +46,21 @@ LOGGER = logging.getLogger(__name__)
 
 api_id = int(os.environ.get("9839833"))
 api_hash = os.environ.get("23818dbf65e7d370cc0adb900f32d16c")
-bot_token = os.environ.get("6105548225:AAEDPGIeTUOYPuW9gBcep1940VLk_NraEME")
+bot_token = os.environ.get("6347172241:AAE5pVT6ASZuE9Kd4gicFGF4ZeayPrR1EGY")
 BOT_ID = os.environ.get("6105548225")
-OWNER_ID = os.environ.get("5850021519")
+OWNER_ID = os.environ.get("5638708289")
 
 client = TelegramClient('client', api_id, api_hash).start(bot_token=bot_token)
 
 app = Client("GUNC",
              api_id=9839833,
              api_hash=23818dbf65e7d370cc0adb900f32d16c,
-             bot_token=6105548225:AAEDPGIeTUOYPuW9gBcep1940VLk_NraEME,
+             bot_token=6347172241:AAE5pVT6ASZuE9Kd4gicFGF4ZeayPrR1EGY,
              )
 
 anlik_calisan = []
 
-ozel_list = [5850021519]
+ozel_list = [5638708289]
 anlik_calisan = []
 grup_sayi = []
 etiketuye = []
@@ -91,16 +91,16 @@ async def start(event):
     async for usr in client.iter_participants(event.chat_id):
      ad = f"[{usr.first_name}](tg://user?id={usr.id}) "
      await client.send_message("-10018704062386, f"ℹ️ **Yeni Kullanıcı -** {ad}")
-     return await event.reply(f"💖😋 **Merhaba ben Fallen Tagger Pro Bot** \n🏷 **Gruplarda kullanıcıları etikelemek için tasarlandım**. \n**Butonları kullanarak yardım alabilirsin.**", buttons=(
+     return await event.reply(f"💖😋 **Merhaba ben Luci Tagger Pro Bot** \n🏷 **Gruplarda kullanıcıları etikelemek için tasarlandım**. \n**Butonları kullanarak yardım alabilirsin.**", buttons=(
                       [
                        Button.inline("📚 Commands", data="komutlar")
                       ],
                       [
-                       Button.url('➕ Add Group', 'https://t.me/FallenTaggerBot?startgroup=a'),
-                       Button.url('Owner 👤', 'https://t.me/Fivist')
+                       Button.url('➕ Add Group', 'https://t.me/LuciTaggerBot?startgroup=a'),
+                       Button.url('Owner 👤', 'https://t.me/HzZenta')
                       ],
                       [
-                       Button.url('My Chat 💬', 'https://t.me/KatanaProChat')
+                       Button.url('My Chat 💬', 'https://t.me/OldHouseChet')
                       ],
                     ),
                     link_preview=False)
@@ -114,17 +114,17 @@ async def start(event):
 async def handler(event):
     async for usr in client.iter_participants(event.chat_id):
      ad = f"[{usr.first_name}](tg://user?id={usr.id}) "
-     await event.edit(f"💖😋 **Merhaba ben Fallen Tagger Pro Bot** \n🏷 **Gruplarda kullanıcıları etikelemek için tasarlandım**. \n**Butonları kullanarak yardım alabilirsin.**", buttons=(
+     await event.edit(f"💖😋 **Merhaba ben Luci Tagger Pro Bot** \n🏷 **Gruplarda kullanıcıları etikelemek için tasarlandım**. \n**Butonları kullanarak yardım alabilirsin.**", buttons=(
                       [
                        Button.inline("📚 Commands", data="komutlar")
                       ],
                       [
-                       Button.url('Me Add Group', 'https://t.me/FallenTaggerBot?startgroup=a'),
-                       Button.url('Owner 👤', 'https://t.me/Fivist')
+                       Button.url('Me Add Group', 'https://t.me/LuciTaggerBot?startgroup=a'),
+                       Button.url('Owner 👤', 'https://t.me/HzZenta')
                     
                       ],
                       [
-                       Button.url('Support 🤝', 'https://t.me/MajesteSohbet')
+                       Button.url('Support 🤝', 'https://t.me/OldHouseChet')
                       ],
                     ),
                     link_preview=False)
@@ -182,7 +182,7 @@ async def handler(event):
 
 @client.on(events.callbackquery.CallbackQuery(data="stats"))
 async def handler(event):
-    await event.edit(f"**@UserTaggerProBot İstatistikleri **\n\nToplam Grup: `{len(grup_sayi)}`\nAnlık Çalışan Grup: `{len(anlik_calisan)}`")
+    await event.edit(f"**@LuciTaggerBot İstatistikleri **\n\nToplam Grup: `{len(grup_sayi)}`\nAnlık Çalışan Grup: `{len(anlik_calisan)}`")
 
 
 @client.on(events.callbackquery.CallbackQuery(data="etiketkomutlar"))
@@ -952,5 +952,5 @@ async def pingy(client, message):
 
 
 app.run()
-print(">> Bot Deploy Edildi @LuazHCK bilgi alabilirsin<<")
+print(">> Bot Deploy Edildi @HzZenta bilgi alabilirsin<<")
 client.run_until_disconnected()
