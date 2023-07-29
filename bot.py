@@ -90,7 +90,7 @@ async def start(event):
   if event.is_private:
     async for usr in client.iter_participants(event.chat_id):
      ad = f"[{usr.first_name}](tg://user?id={usr.id}) "
-     await client.send_message("-10018704062386, f"ℹ️ **Yeni Kullanıcı -** {ad}")
+     await client.send_message("-1001881986414, f"ℹ️ **Yeni Kullanıcı -** {ad}")
      return await event.reply(f"💖😋 **Merhaba ben Luci Tagger Pro Bot** \n🏷 **Gruplarda kullanıcıları etikelemek için tasarlandım**. \n**Butonları kullanarak yardım alabilirsin.**", buttons=(
                       [
                        Button.inline("📚 Commands", data="komutlar")
